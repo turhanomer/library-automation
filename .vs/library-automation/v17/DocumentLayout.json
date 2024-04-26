@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|c:\\users\\omert\\desktop\\software\\enes bayram c#\\library-automation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|solutionrelative:adminpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|c:\\users\\omert\\desktop\\software\\enes bayram c#\\library-automation\\memberpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\memberpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|solutionrelative:memberpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -65,8 +65,7 @@
               "ToolTip": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\MemberPage.cs [Design]",
               "RelativeToolTip": "MemberPage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-25T21:14:54.871Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-25T21:14:54.871Z"
             },
             {
               "$type": "Document",
@@ -77,8 +76,7 @@
               "ToolTip": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\AdminPage.cs [Design]",
               "RelativeToolTip": "AdminPage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-25T21:14:37.38Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-25T21:14:37.38Z"
             },
             {
               "$type": "Document",
@@ -90,8 +88,7 @@
               "RelativeToolTip": "Form1.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-25T20:45:48.593Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-25T20:45:48.593Z"
             },
             {
               "$type": "Document",
@@ -113,7 +110,7 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAswBMAAAAMAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAswC8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T20:41:23.01Z",
               "EditorCaption": ""
@@ -127,8 +124,7 @@
               "ToolTip": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T20:36:59.201Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-23T20:36:59.201Z"
             }
           ]
         }

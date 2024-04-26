@@ -17,3 +17,4 @@ C:\Users\omert\Desktop\Software\Enes Bayram C#\library-automation\obj\Debug\net8
 C:\Users\omert\Desktop\Software\Enes Bayram C#\library-automation\obj\Debug\net8.0-windows\library-automation.pdb
 C:\Users\omert\Desktop\Software\Enes Bayram C#\library-automation\obj\Debug\net8.0-windows\library-automation.genruntimeconfig.cache
 C:\Users\omert\Desktop\Software\Enes Bayram C#\library-automation\obj\Debug\net8.0-windows\ref\library-automation.dll
+C:\Users\omert\Desktop\Software\Enes Bayram C#\library-automation\obj\Debug\net8.0-windows\library-automation.sourcelink.json
