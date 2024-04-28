@@ -14,10 +14,12 @@ namespace library_automation
     public partial class AdminPage : Form
     {
         List<Person> mypersons;
-        public AdminPage(List<Person> mypersons)
+        List<Book> mybooks;
+        public AdminPage(List<Person> mypersons, List<Book> mybooks)
         {
             InitializeComponent();
             this.mypersons = mypersons;
+            this.mybooks = mybooks;
         }
 
         private void create_btn_Click(object sender, EventArgs e)
@@ -82,5 +84,6 @@ namespace library_automation
             form.Show();
             this.Hide();
         }
+
     }
 }

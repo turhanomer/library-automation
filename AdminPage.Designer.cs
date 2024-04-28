@@ -58,9 +58,45 @@
             Column4 = new DataGridViewTextBoxColumn();
             label8 = new Label();
             pictureBox1 = new PictureBox();
+            dataGridView2 = new DataGridView();
+            bookid = new DataGridViewTextBoxColumn();
+            bookname = new DataGridViewTextBoxColumn();
+            author = new DataGridViewTextBoxColumn();
+            lang = new DataGridViewTextBoxColumn();
+            publishhouse = new DataGridViewTextBoxColumn();
+            type = new DataGridViewTextBoxColumn();
+            amount = new DataGridViewTextBoxColumn();
+            numberofpages = new DataGridViewTextBoxColumn();
+            yearofissue = new DataGridViewTextBoxColumn();
+            label9 = new Label();
+            groupBox2 = new GroupBox();
+            textBox9 = new TextBox();
+            textBox8 = new TextBox();
+            txt_yearofissue = new Label();
+            txt_numberofpages = new Label();
+            textBox7 = new TextBox();
+            btn_bookclear = new Button();
+            btn_bookupdate = new Button();
+            btn_bookdelete = new Button();
+            btn_bookadd = new Button();
+            textBox1 = new TextBox();
+            txt_amount = new Label();
+            textBox2 = new TextBox();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
+            txt_bookname = new TextBox();
+            txt_bookid = new TextBox();
+            txt_type = new Label();
+            txt_publishhouse = new Label();
+            txt_lang = new Label();
+            txt_bookauthor = new Label();
+            label15 = new Label();
+            label16 = new Label();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
@@ -83,20 +119,20 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(label2);
-            groupBox1.Location = new Point(12, 12);
+            groupBox1.Location = new Point(12, 371);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(369, 639);
+            groupBox1.Size = new Size(599, 331);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Admin Panel";
+            groupBox1.Text = "member transactions";
             // 
             // maskedTextBox1
             // 
             maskedTextBox1.Cursor = Cursors.IBeam;
-            maskedTextBox1.Location = new Point(178, 187);
+            maskedTextBox1.Location = new Point(151, 163);
             maskedTextBox1.Mask = "00/00/0000 90:00";
             maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(174, 26);
+            maskedTextBox1.Size = new Size(199, 26);
             maskedTextBox1.TabIndex = 22;
             maskedTextBox1.ValidatingType = typeof(DateTime);
             // 
@@ -106,7 +142,7 @@
             clear_btn.Cursor = Cursors.Hand;
             clear_btn.Font = new Font("Arial Rounded MT Bold", 11.8956518F, FontStyle.Regular, GraphicsUnit.Point, 0);
             clear_btn.ForeColor = SystemColors.ButtonHighlight;
-            clear_btn.Location = new Point(178, 584);
+            clear_btn.Location = new Point(388, 276);
             clear_btn.Name = "clear_btn";
             clear_btn.Size = new Size(174, 49);
             clear_btn.TabIndex = 21;
@@ -120,7 +156,7 @@
             update_btn.Cursor = Cursors.Hand;
             update_btn.Font = new Font("Arial Rounded MT Bold", 11.8956518F, FontStyle.Regular, GraphicsUnit.Point, 0);
             update_btn.ForeColor = SystemColors.ButtonHighlight;
-            update_btn.Location = new Point(178, 529);
+            update_btn.Location = new Point(388, 221);
             update_btn.Name = "update_btn";
             update_btn.Size = new Size(174, 49);
             update_btn.TabIndex = 20;
@@ -134,7 +170,7 @@
             delete_btn.Cursor = Cursors.Hand;
             delete_btn.Font = new Font("Arial Rounded MT Bold", 11.8956518F, FontStyle.Regular, GraphicsUnit.Point, 0);
             delete_btn.ForeColor = SystemColors.ButtonHighlight;
-            delete_btn.Location = new Point(178, 474);
+            delete_btn.Location = new Point(388, 166);
             delete_btn.Name = "delete_btn";
             delete_btn.Size = new Size(174, 49);
             delete_btn.TabIndex = 19;
@@ -148,7 +184,7 @@
             create_btn.Cursor = Cursors.Hand;
             create_btn.Font = new Font("Arial Rounded MT Bold", 11.8956518F, FontStyle.Regular, GraphicsUnit.Point, 0);
             create_btn.ForeColor = SystemColors.ButtonHighlight;
-            create_btn.Location = new Point(178, 419);
+            create_btn.Location = new Point(388, 111);
             create_btn.Name = "create_btn";
             create_btn.Size = new Size(174, 49);
             create_btn.TabIndex = 18;
@@ -159,9 +195,9 @@
             // txt_authorization
             // 
             txt_authorization.Cursor = Cursors.IBeam;
-            txt_authorization.Location = new Point(178, 339);
+            txt_authorization.Location = new Point(149, 299);
             txt_authorization.Name = "txt_authorization";
-            txt_authorization.Size = new Size(174, 26);
+            txt_authorization.Size = new Size(201, 26);
             txt_authorization.TabIndex = 15;
             // 
             // label7
@@ -169,7 +205,7 @@
             label7.AutoSize = true;
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI", 13.7739134F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            label7.Location = new Point(6, 335);
+            label7.Location = new Point(0, 295);
             label7.Name = "label7";
             label7.Size = new Size(147, 30);
             label7.TabIndex = 14;
@@ -178,41 +214,41 @@
             // txt_password
             // 
             txt_password.Cursor = Cursors.IBeam;
-            txt_password.Location = new Point(178, 287);
+            txt_password.Location = new Point(149, 253);
             txt_password.Name = "txt_password";
-            txt_password.Size = new Size(174, 26);
+            txt_password.Size = new Size(201, 26);
             txt_password.TabIndex = 13;
             // 
             // txt_username
             // 
             txt_username.Cursor = Cursors.IBeam;
-            txt_username.Location = new Point(178, 235);
+            txt_username.Location = new Point(149, 208);
             txt_username.Name = "txt_username";
-            txt_username.Size = new Size(174, 26);
+            txt_username.Size = new Size(201, 26);
             txt_username.TabIndex = 12;
             // 
             // txt_surname
             // 
             txt_surname.Cursor = Cursors.IBeam;
-            txt_surname.Location = new Point(178, 140);
+            txt_surname.Location = new Point(149, 115);
             txt_surname.Name = "txt_surname";
-            txt_surname.Size = new Size(174, 26);
+            txt_surname.Size = new Size(199, 26);
             txt_surname.TabIndex = 10;
             // 
             // txt_name
             // 
             txt_name.Cursor = Cursors.IBeam;
-            txt_name.Location = new Point(178, 94);
+            txt_name.Location = new Point(149, 70);
             txt_name.Name = "txt_name";
-            txt_name.Size = new Size(174, 26);
+            txt_name.Size = new Size(201, 26);
             txt_name.TabIndex = 9;
             // 
             // txt_id
             // 
             txt_id.Cursor = Cursors.IBeam;
-            txt_id.Location = new Point(178, 46);
+            txt_id.Location = new Point(147, 22);
             txt_id.Name = "txt_id";
-            txt_id.Size = new Size(174, 26);
+            txt_id.Size = new Size(201, 26);
             txt_id.TabIndex = 8;
             // 
             // label6
@@ -220,7 +256,7 @@
             label6.AutoSize = true;
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 13.7739134F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            label6.Location = new Point(6, 281);
+            label6.Location = new Point(0, 249);
             label6.Name = "label6";
             label6.Size = new Size(108, 30);
             label6.TabIndex = 7;
@@ -231,7 +267,7 @@
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 13.7739134F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            label5.Location = new Point(6, 231);
+            label5.Location = new Point(0, 208);
             label5.Name = "label5";
             label5.Size = new Size(116, 30);
             label5.TabIndex = 6;
@@ -242,7 +278,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 13.7739134F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            label4.Location = new Point(6, 183);
+            label4.Location = new Point(0, 159);
             label4.Name = "label4";
             label4.Size = new Size(149, 30);
             label4.TabIndex = 5;
@@ -253,7 +289,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 13.7739134F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            label3.Location = new Point(6, 136);
+            label3.Location = new Point(0, 111);
             label3.Name = "label3";
             label3.Size = new Size(104, 30);
             label3.TabIndex = 4;
@@ -264,7 +300,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 13.7739134F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            label1.Location = new Point(6, 90);
+            label1.Location = new Point(0, 66);
             label1.Name = "label1";
             label1.Size = new Size(76, 30);
             label1.TabIndex = 3;
@@ -275,7 +311,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 13.7739134F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            label2.Location = new Point(6, 42);
+            label2.Location = new Point(0, 22);
             label2.Name = "label2";
             label2.Size = new Size(37, 30);
             label2.TabIndex = 2;
@@ -285,10 +321,10 @@
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID, NAME, SURNAME, Column1, Column2, Column3, Column4 });
-            dataGridView1.Location = new Point(393, 55);
+            dataGridView1.Location = new Point(12, 48);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 49;
-            dataGridView1.Size = new Size(795, 596);
+            dataGridView1.Size = new Size(599, 317);
             dataGridView1.TabIndex = 2;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -298,7 +334,8 @@
             ID.HeaderText = "ID";
             ID.MinimumWidth = 6;
             ID.Name = "ID";
-            ID.Width = 53;
+            ID.SortMode = DataGridViewColumnSortMode.NotSortable;
+            ID.Width = 30;
             // 
             // NAME
             // 
@@ -306,7 +343,8 @@
             NAME.HeaderText = "NAME";
             NAME.MinimumWidth = 6;
             NAME.Name = "NAME";
-            NAME.Width = 82;
+            NAME.SortMode = DataGridViewColumnSortMode.NotSortable;
+            NAME.Width = 59;
             // 
             // SURNAME
             // 
@@ -314,7 +352,8 @@
             SURNAME.HeaderText = "SURNAME";
             SURNAME.MinimumWidth = 6;
             SURNAME.Name = "SURNAME";
-            SURNAME.Width = 110;
+            SURNAME.SortMode = DataGridViewColumnSortMode.NotSortable;
+            SURNAME.Width = 87;
             // 
             // Column1
             // 
@@ -322,7 +361,8 @@
             Column1.HeaderText = "CREATED TIME";
             Column1.MinimumWidth = 6;
             Column1.Name = "Column1";
-            Column1.Width = 138;
+            Column1.SortMode = DataGridViewColumnSortMode.NotSortable;
+            Column1.Width = 115;
             // 
             // Column2
             // 
@@ -330,7 +370,8 @@
             Column2.HeaderText = "USERNAME";
             Column2.MinimumWidth = 6;
             Column2.Name = "Column2";
-            Column2.Width = 118;
+            Column2.SortMode = DataGridViewColumnSortMode.NotSortable;
+            Column2.Width = 95;
             // 
             // Column3
             // 
@@ -338,7 +379,8 @@
             Column3.HeaderText = "PASSWORD";
             Column3.MinimumWidth = 6;
             Column3.Name = "Column3";
-            Column3.Width = 117;
+            Column3.SortMode = DataGridViewColumnSortMode.NotSortable;
+            Column3.Width = 94;
             // 
             // Column4
             // 
@@ -346,18 +388,19 @@
             Column4.HeaderText = "AUTHORIZATION";
             Column4.MinimumWidth = 6;
             Column4.Name = "Column4";
-            Column4.Width = 155;
+            Column4.SortMode = DataGridViewColumnSortMode.NotSortable;
+            Column4.Width = 132;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.BackColor = Color.Transparent;
             label8.Font = new Font("Arial Rounded MT Bold", 18.1565228F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(746, 12);
+            label8.Location = new Point(230, 12);
             label8.Name = "label8";
-            label8.Size = new Size(130, 33);
+            label8.Size = new Size(146, 33);
             label8.TabIndex = 22;
-            label8.Text = "Member";
+            label8.Text = "Members";
             // 
             // pictureBox1
             // 
@@ -366,7 +409,7 @@
             pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             pictureBox1.Cursor = Cursors.Hand;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1121, 0);
+            pictureBox1.Location = new Point(1226, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(81, 45);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -374,26 +417,391 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+            // dataGridView2
+            // 
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { bookid, bookname, author, lang, publishhouse, type, amount, numberofpages, yearofissue });
+            dataGridView2.Location = new Point(617, 48);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.RowHeadersWidth = 49;
+            dataGridView2.Size = new Size(677, 317);
+            dataGridView2.TabIndex = 24;
+            // 
+            // bookid
+            // 
+            bookid.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
+            bookid.HeaderText = "BOOK ID";
+            bookid.MinimumWidth = 6;
+            bookid.Name = "bookid";
+            bookid.SortMode = DataGridViewColumnSortMode.NotSortable;
+            bookid.Width = 67;
+            // 
+            // bookname
+            // 
+            bookname.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
+            bookname.HeaderText = "BOOK NAME";
+            bookname.MinimumWidth = 6;
+            bookname.Name = "bookname";
+            bookname.SortMode = DataGridViewColumnSortMode.NotSortable;
+            bookname.Width = 93;
+            // 
+            // author
+            // 
+            author.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
+            author.HeaderText = "AUTHOR";
+            author.MinimumWidth = 6;
+            author.Name = "author";
+            author.SortMode = DataGridViewColumnSortMode.NotSortable;
+            author.Width = 75;
+            // 
+            // lang
+            // 
+            lang.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
+            lang.HeaderText = "LANGUAGE";
+            lang.MinimumWidth = 6;
+            lang.Name = "lang";
+            lang.SortMode = DataGridViewColumnSortMode.NotSortable;
+            lang.Width = 93;
+            // 
+            // publishhouse
+            // 
+            publishhouse.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
+            publishhouse.HeaderText = "PUBLISH HOUSE";
+            publishhouse.MinimumWidth = 2;
+            publishhouse.Name = "publishhouse";
+            publishhouse.SortMode = DataGridViewColumnSortMode.NotSortable;
+            publishhouse.Width = 114;
+            // 
+            // type
+            // 
+            type.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
+            type.HeaderText = "TYPE";
+            type.MinimumWidth = 6;
+            type.Name = "type";
+            type.SortMode = DataGridViewColumnSortMode.NotSortable;
+            type.Width = 49;
+            // 
+            // amount
+            // 
+            amount.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
+            amount.HeaderText = "AMOUNT";
+            amount.MinimumWidth = 6;
+            amount.Name = "amount";
+            amount.SortMode = DataGridViewColumnSortMode.NotSortable;
+            amount.Width = 81;
+            // 
+            // numberofpages
+            // 
+            numberofpages.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
+            numberofpages.HeaderText = "NUMBER OF PAGES";
+            numberofpages.MinimumWidth = 6;
+            numberofpages.Name = "numberofpages";
+            numberofpages.SortMode = DataGridViewColumnSortMode.NotSortable;
+            numberofpages.Width = 95;
+            // 
+            // yearofissue
+            // 
+            yearofissue.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
+            yearofissue.HeaderText = "YEAR OF ISSUE";
+            yearofissue.MinimumWidth = 6;
+            yearofissue.Name = "yearofissue";
+            yearofissue.SortMode = DataGridViewColumnSortMode.NotSortable;
+            yearofissue.Width = 105;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = Color.Transparent;
+            label9.Font = new Font("Arial Rounded MT Bold", 18.1565228F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.Location = new Point(878, 12);
+            label9.Name = "label9";
+            label9.Size = new Size(105, 33);
+            label9.TabIndex = 25;
+            label9.Text = "Books";
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(textBox9);
+            groupBox2.Controls.Add(textBox8);
+            groupBox2.Controls.Add(txt_yearofissue);
+            groupBox2.Controls.Add(txt_numberofpages);
+            groupBox2.Controls.Add(textBox7);
+            groupBox2.Controls.Add(btn_bookclear);
+            groupBox2.Controls.Add(btn_bookupdate);
+            groupBox2.Controls.Add(btn_bookdelete);
+            groupBox2.Controls.Add(btn_bookadd);
+            groupBox2.Controls.Add(textBox1);
+            groupBox2.Controls.Add(txt_amount);
+            groupBox2.Controls.Add(textBox2);
+            groupBox2.Controls.Add(textBox3);
+            groupBox2.Controls.Add(textBox4);
+            groupBox2.Controls.Add(txt_bookname);
+            groupBox2.Controls.Add(txt_bookid);
+            groupBox2.Controls.Add(txt_type);
+            groupBox2.Controls.Add(txt_publishhouse);
+            groupBox2.Controls.Add(txt_lang);
+            groupBox2.Controls.Add(txt_bookauthor);
+            groupBox2.Controls.Add(label15);
+            groupBox2.Controls.Add(label16);
+            groupBox2.Location = new Point(617, 371);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(677, 331);
+            groupBox2.TabIndex = 26;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "book transactions";
+            // 
+            // textBox9
+            // 
+            textBox9.Cursor = Cursors.IBeam;
+            textBox9.Location = new Point(510, 72);
+            textBox9.Name = "textBox9";
+            textBox9.Size = new Size(148, 26);
+            textBox9.TabIndex = 26;
+            // 
+            // textBox8
+            // 
+            textBox8.Cursor = Cursors.IBeam;
+            textBox8.Location = new Point(510, 26);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(148, 26);
+            textBox8.TabIndex = 25;
+            // 
+            // txt_yearofissue
+            // 
+            txt_yearofissue.AutoSize = true;
+            txt_yearofissue.BackColor = Color.Transparent;
+            txt_yearofissue.Font = new Font("Segoe UI", 13.7739134F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            txt_yearofissue.Location = new Point(314, 66);
+            txt_yearofissue.Name = "txt_yearofissue";
+            txt_yearofissue.Size = new Size(143, 30);
+            txt_yearofissue.TabIndex = 24;
+            txt_yearofissue.Text = "Year Of Issue:";
+            // 
+            // txt_numberofpages
+            // 
+            txt_numberofpages.AutoSize = true;
+            txt_numberofpages.BackColor = Color.Transparent;
+            txt_numberofpages.Font = new Font("Segoe UI", 13.7739134F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            txt_numberofpages.Location = new Point(314, 22);
+            txt_numberofpages.Name = "txt_numberofpages";
+            txt_numberofpages.Size = new Size(190, 30);
+            txt_numberofpages.TabIndex = 23;
+            txt_numberofpages.Text = "Number Of Pages:";
+            // 
+            // textBox7
+            // 
+            textBox7.Cursor = Cursors.IBeam;
+            textBox7.Location = new Point(149, 159);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(148, 26);
+            textBox7.TabIndex = 22;
+            // 
+            // btn_bookclear
+            // 
+            btn_bookclear.BackColor = Color.Tomato;
+            btn_bookclear.Cursor = Cursors.Hand;
+            btn_bookclear.Font = new Font("Arial Rounded MT Bold", 11.8956518F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_bookclear.ForeColor = SystemColors.ButtonHighlight;
+            btn_bookclear.Location = new Point(403, 276);
+            btn_bookclear.Name = "btn_bookclear";
+            btn_bookclear.Size = new Size(174, 49);
+            btn_bookclear.TabIndex = 21;
+            btn_bookclear.Text = "Clear";
+            btn_bookclear.UseVisualStyleBackColor = false;
+            // 
+            // btn_bookupdate
+            // 
+            btn_bookupdate.BackColor = Color.MediumTurquoise;
+            btn_bookupdate.Cursor = Cursors.Hand;
+            btn_bookupdate.Font = new Font("Arial Rounded MT Bold", 11.8956518F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_bookupdate.ForeColor = SystemColors.ButtonHighlight;
+            btn_bookupdate.Location = new Point(403, 221);
+            btn_bookupdate.Name = "btn_bookupdate";
+            btn_bookupdate.Size = new Size(174, 49);
+            btn_bookupdate.TabIndex = 20;
+            btn_bookupdate.Text = "Update";
+            btn_bookupdate.UseVisualStyleBackColor = false;
+            // 
+            // btn_bookdelete
+            // 
+            btn_bookdelete.BackColor = Color.Red;
+            btn_bookdelete.Cursor = Cursors.Hand;
+            btn_bookdelete.Font = new Font("Arial Rounded MT Bold", 11.8956518F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_bookdelete.ForeColor = SystemColors.ButtonHighlight;
+            btn_bookdelete.Location = new Point(403, 166);
+            btn_bookdelete.Name = "btn_bookdelete";
+            btn_bookdelete.Size = new Size(174, 49);
+            btn_bookdelete.TabIndex = 19;
+            btn_bookdelete.Text = "Delete";
+            btn_bookdelete.UseVisualStyleBackColor = false;
+            // 
+            // btn_bookadd
+            // 
+            btn_bookadd.BackColor = Color.LimeGreen;
+            btn_bookadd.Cursor = Cursors.Hand;
+            btn_bookadd.Font = new Font("Arial Rounded MT Bold", 11.8956518F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_bookadd.ForeColor = SystemColors.ButtonHighlight;
+            btn_bookadd.Location = new Point(403, 111);
+            btn_bookadd.Name = "btn_bookadd";
+            btn_bookadd.Size = new Size(174, 49);
+            btn_bookadd.TabIndex = 18;
+            btn_bookadd.Text = "Create";
+            btn_bookadd.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            textBox1.Cursor = Cursors.IBeam;
+            textBox1.Location = new Point(149, 299);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(148, 26);
+            textBox1.TabIndex = 15;
+            // 
+            // txt_amount
+            // 
+            txt_amount.AutoSize = true;
+            txt_amount.BackColor = Color.Transparent;
+            txt_amount.Font = new Font("Segoe UI", 13.7739134F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            txt_amount.Location = new Point(0, 295);
+            txt_amount.Name = "txt_amount";
+            txt_amount.Size = new Size(95, 30);
+            txt_amount.TabIndex = 14;
+            txt_amount.Text = "Amount:";
+            // 
+            // textBox2
+            // 
+            textBox2.Cursor = Cursors.IBeam;
+            textBox2.Location = new Point(149, 253);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(148, 26);
+            textBox2.TabIndex = 13;
+            // 
+            // textBox3
+            // 
+            textBox3.Cursor = Cursors.IBeam;
+            textBox3.Location = new Point(149, 208);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(148, 26);
+            textBox3.TabIndex = 12;
+            // 
+            // textBox4
+            // 
+            textBox4.Cursor = Cursors.IBeam;
+            textBox4.Location = new Point(149, 111);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(148, 26);
+            textBox4.TabIndex = 10;
+            // 
+            // txt_bookname
+            // 
+            txt_bookname.Cursor = Cursors.IBeam;
+            txt_bookname.Location = new Point(149, 70);
+            txt_bookname.Name = "txt_bookname";
+            txt_bookname.Size = new Size(148, 26);
+            txt_bookname.TabIndex = 9;
+            // 
+            // txt_bookid
+            // 
+            txt_bookid.Cursor = Cursors.IBeam;
+            txt_bookid.Location = new Point(147, 22);
+            txt_bookid.Name = "txt_bookid";
+            txt_bookid.Size = new Size(150, 26);
+            txt_bookid.TabIndex = 8;
+            // 
+            // txt_type
+            // 
+            txt_type.AutoSize = true;
+            txt_type.BackColor = Color.Transparent;
+            txt_type.Font = new Font("Segoe UI", 13.7739134F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            txt_type.Location = new Point(0, 249);
+            txt_type.Name = "txt_type";
+            txt_type.Size = new Size(65, 30);
+            txt_type.TabIndex = 7;
+            txt_type.Text = "Type:";
+            // 
+            // txt_publishhouse
+            // 
+            txt_publishhouse.AutoSize = true;
+            txt_publishhouse.BackColor = Color.Transparent;
+            txt_publishhouse.Font = new Font("Segoe UI", 13.7739134F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            txt_publishhouse.Location = new Point(0, 208);
+            txt_publishhouse.Name = "txt_publishhouse";
+            txt_publishhouse.Size = new Size(154, 30);
+            txt_publishhouse.TabIndex = 6;
+            txt_publishhouse.Text = "Publish House:";
+            // 
+            // txt_lang
+            // 
+            txt_lang.AutoSize = true;
+            txt_lang.BackColor = Color.Transparent;
+            txt_lang.Font = new Font("Segoe UI", 13.7739134F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            txt_lang.Location = new Point(0, 159);
+            txt_lang.Name = "txt_lang";
+            txt_lang.Size = new Size(112, 30);
+            txt_lang.TabIndex = 5;
+            txt_lang.Text = "Language:";
+            // 
+            // txt_bookauthor
+            // 
+            txt_bookauthor.AutoSize = true;
+            txt_bookauthor.BackColor = Color.Transparent;
+            txt_bookauthor.Font = new Font("Segoe UI", 13.7739134F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            txt_bookauthor.Location = new Point(0, 111);
+            txt_bookauthor.Name = "txt_bookauthor";
+            txt_bookauthor.Size = new Size(84, 30);
+            txt_bookauthor.TabIndex = 4;
+            txt_bookauthor.Text = "Author:";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.BackColor = Color.Transparent;
+            label15.Font = new Font("Segoe UI", 13.7739134F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            label15.Location = new Point(0, 66);
+            label15.Name = "label15";
+            label15.Size = new Size(132, 30);
+            label15.TabIndex = 3;
+            label15.Text = "Book Name:";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.BackColor = Color.Transparent;
+            label16.Font = new Font("Segoe UI", 13.7739134F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            label16.Location = new Point(0, 22);
+            label16.Name = "label16";
+            label16.Size = new Size(37, 30);
+            label16.TabIndex = 2;
+            label16.Text = "Id:";
+            // 
             // AdminPage
             // 
             AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoValidate = AutoValidate.EnablePreventFocusChange;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1200, 663);
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1306, 714);
+            Controls.Add(groupBox2);
+            Controls.Add(label9);
+            Controls.Add(dataGridView2);
             Controls.Add(pictureBox1);
             Controls.Add(label8);
             Controls.Add(dataGridView1);
             Controls.Add(groupBox1);
+            DoubleBuffered = true;
             Font = new Font("Segoe UI Semibold", 8.765218F, FontStyle.Bold, GraphicsUnit.Point, 162);
             FormBorderStyle = FormBorderStyle.None;
             Name = "AdminPage";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "AdminPage";
             Load += AdminPage_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -418,6 +826,9 @@
         private Button delete_btn;
         private Button create_btn;
         private DataGridView dataGridView1;
+        private Label label8;
+        private MaskedTextBox maskedTextBox1;
+        private PictureBox pictureBox1;
         private DataGridViewTextBoxColumn ID;
         private DataGridViewTextBoxColumn NAME;
         private DataGridViewTextBoxColumn SURNAME;
@@ -425,8 +836,39 @@
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column4;
-        private Label label8;
-        private MaskedTextBox maskedTextBox1;
-        private PictureBox pictureBox1;
+        private DataGridView dataGridView2;
+        private Label label9;
+        private DataGridViewTextBoxColumn bookid;
+        private DataGridViewTextBoxColumn bookname;
+        private DataGridViewTextBoxColumn author;
+        private DataGridViewTextBoxColumn lang;
+        private DataGridViewTextBoxColumn publishhouse;
+        private DataGridViewTextBoxColumn type;
+        private DataGridViewTextBoxColumn amount;
+        private DataGridViewTextBoxColumn numberofpages;
+        private DataGridViewTextBoxColumn yearofissue;
+        private GroupBox groupBox2;
+        private Button btn_bookclear;
+        private Button btn_bookupdate;
+        private Button btn_bookdelete;
+        private Button btn_bookadd;
+        private TextBox textBox1;
+        private Label txt_amount;
+        private TextBox textBox2;
+        private TextBox textBox3;
+        private TextBox textBox4;
+        private TextBox txt_bookname;
+        private TextBox txt_bookid;
+        private Label txt_type;
+        private Label txt_publishhouse;
+        private Label txt_lang;
+        private Label txt_bookauthor;
+        private Label label15;
+        private Label label16;
+        private TextBox textBox9;
+        private TextBox textBox8;
+        private Label txt_yearofissue;
+        private Label txt_numberofpages;
+        private TextBox textBox7;
     }
 }

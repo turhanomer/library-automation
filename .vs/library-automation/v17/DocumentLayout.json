@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|c:\\users\\omert\\desktop\\software\\enes bayram c#\\library-automation\\model\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|solutionrelative:model\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\memberpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|solutionrelative:memberpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\adminpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|solutionrelative:adminpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\memberpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|solutionrelative:memberpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|c:\\users\\omert\\desktop\\software\\enes bayram c#\\library-automation\\model\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|solutionrelative:model\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\model\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|solutionrelative:model\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\adminpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,6 +29,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\adminpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|solutionrelative:adminpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|c:\\users\\omert\\desktop\\software\\enes bayram c#\\library-automation\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7D1AA04-72D3-4175-B054-0B9244C0E3C8}|library-automation.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,12 +46,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -61,50 +61,34 @@
               "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "AdminPage.cs",
               "DocumentMoniker": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\AdminPage.cs",
               "RelativeDocumentMoniker": "AdminPage.cs",
               "ToolTip": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\AdminPage.cs",
               "RelativeToolTip": "AdminPage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAiAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAD4v1YAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T11:28:08.616Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAtAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACAAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T20:41:23.01Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MemberPage.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\MemberPage.cs",
-              "RelativeDocumentMoniker": "MemberPage.cs",
-              "ToolTip": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\MemberPage.cs [Design]",
-              "RelativeToolTip": "MemberPage.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-25T21:14:54.871Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AdminPage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\AdminPage.cs",
               "RelativeDocumentMoniker": "AdminPage.cs",
@@ -116,13 +100,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\Model\\Book.cs",
+              "RelativeDocumentMoniker": "Model\\Book.cs",
+              "ToolTip": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\Model\\Book.cs",
+              "RelativeToolTip": "Model\\Book.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAswBsAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:09:48.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MemberPage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\MemberPage.cs",
+              "RelativeDocumentMoniker": "MemberPage.cs",
+              "ToolTip": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\MemberPage.cs [Design]",
+              "RelativeToolTip": "MemberPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T21:14:54.871Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Person.cs",
               "DocumentMoniker": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\Model\\Person.cs",
               "RelativeDocumentMoniker": "Model\\Person.cs",
               "ToolTip": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\Model\\Person.cs",
               "RelativeToolTip": "Model\\Person.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAA8wFUAAAAJAAAA",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAmwFUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-25T19:20:31.206Z",
               "EditorCaption": ""
@@ -141,26 +150,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "AdminPage.Designer.cs",
               "DocumentMoniker": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\AdminPage.Designer.cs",
               "RelativeDocumentMoniker": "AdminPage.Designer.cs",
               "ToolTip": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\AdminPage.Designer.cs",
               "RelativeToolTip": "AdminPage.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
+              "ViewState": "AQIAAGICAAAAAAAAAAAAAG4CAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T11:28:26.632Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
               "ToolTip": "C:\\Users\\omert\\Desktop\\Software\\Enes Bayram C#\\library-automation\\Form1.Designer.cs",
               "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AQIAAJQAAAAAAAAAAAAQwJ8AAAA7AAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAA9wBkAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-25T20:45:48.593Z",
               "EditorCaption": ""

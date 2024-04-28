@@ -7,15 +7,6 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="library-automation\AdminPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="library-automation\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="library-automation\MemberPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="MemberPage.cs">
       <SubType>Form</SubType>
     </Compile>
