@@ -75,6 +75,7 @@
             // 
             // txt_username
             // 
+            txt_username.Cursor = Cursors.IBeam;
             txt_username.Location = new Point(239, 265);
             txt_username.Name = "txt_username";
             txt_username.Size = new Size(198, 26);
@@ -110,6 +111,7 @@
             // login_btn
             // 
             login_btn.BackColor = Color.LimeGreen;
+            login_btn.Cursor = Cursors.Hand;
             login_btn.Font = new Font("Arial Rounded MT Bold", 11.8956518F, FontStyle.Regular, GraphicsUnit.Point, 0);
             login_btn.ForeColor = SystemColors.ButtonHighlight;
             login_btn.Location = new Point(253, 396);
@@ -123,6 +125,7 @@
             // clear_btn
             // 
             clear_btn.BackColor = Color.Red;
+            clear_btn.Cursor = Cursors.Hand;
             clear_btn.Font = new Font("Arial Rounded MT Bold", 11.8956518F, FontStyle.Regular, GraphicsUnit.Point, 0);
             clear_btn.ForeColor = SystemColors.ButtonHighlight;
             clear_btn.Location = new Point(347, 396);
@@ -150,6 +153,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Cursor = Cursors.IBeam;
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Form1";

@@ -38,11 +38,19 @@ namespace library_automation.Model
         }
         public void setName(string name)
         {
-            this.name = this.surname;
+            this.name = this.name;
         }
         public string getName()
         {
             return this.name;
+        }
+        public void setSurname(string name)
+        {
+            this.surname = this.surname;
+        }
+        public string getSurname()
+        {
+            return this.surname;
         }
         public void setTime(DateTime createdTime)
         {

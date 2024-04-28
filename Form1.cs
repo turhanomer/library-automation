@@ -8,6 +8,7 @@ namespace library_automation
         public Form1()
         {
             InitializeComponent();
+            this.AcceptButton = login_btn;
         }
         private void clear_btn_Click(object sender, EventArgs e)
         {
@@ -17,6 +18,7 @@ namespace library_automation
 
         private void login_btn_Click(object sender, EventArgs e)
         {
+            
             string username, password = "";
             username = txt_username.Text;
             password = txt_password.Text;
@@ -26,7 +28,7 @@ namespace library_automation
             {
                 if (username.ToLower() == person.getUsername() && password.ToLower() == person.getPassword() && person.getAuthorization() == "admin")
                 {
-                    AdminPage adminPage = new AdminPage();
+                    AdminPage adminPage = new AdminPage(myPersons);
                     adminPage.Show();
                     this.Hide();
                     control = true;
@@ -52,8 +54,8 @@ namespace library_automation
         private void Form1_Load(object sender, EventArgs e)
         {
             myPersons.Add(new Person(1, "Ömer", "Turhan", DateTime.Now, "omerturhan", "ot1211", "admin"));
-            myPersons.Add(new Person(1, "Samet", "Çevik", DateTime.Now, "sametcevik", "sc2004", "member"));
-            myPersons.Add(new Person(1, "Mehmet Sahaf", "Bayrakçý", DateTime.Now, "msbayrakci", "msb", "member"));
+            myPersons.Add(new Person(2, "Samet", "Çevik", DateTime.Now, "sametcevik", "sc2004", "member"));
+            myPersons.Add(new Person(3, "Mehmet Sahaf", "Bayrakçý", DateTime.Now, "msbayrakci", "msb", "member"));
         }
     }
 }
