@@ -41,6 +41,10 @@ namespace library_automation.Model
         {
             return this.BookName;
         }
+        public string getAuthor()
+        {
+            return this.Author;
+        }
         public string getBookLang()
         {
             return this.BookLang;

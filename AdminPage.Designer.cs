@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminPage));
             groupBox1 = new GroupBox();
             maskedTextBox1 = new MaskedTextBox();
             clear_btn = new Button();
+            ımageList1 = new ImageList(components);
             update_btn = new Button();
             delete_btn = new Button();
             create_btn = new Button();
@@ -70,20 +72,20 @@
             yearofissue = new DataGridViewTextBoxColumn();
             label9 = new Label();
             groupBox2 = new GroupBox();
-            textBox9 = new TextBox();
-            textBox8 = new TextBox();
+            yearofissue_txt = new TextBox();
+            numberofpages_txt = new TextBox();
             txt_yearofissue = new Label();
             txt_numberofpages = new Label();
-            textBox7 = new TextBox();
+            lang_txt = new TextBox();
             btn_bookclear = new Button();
             btn_bookupdate = new Button();
             btn_bookdelete = new Button();
             btn_bookadd = new Button();
-            textBox1 = new TextBox();
+            amount_txt = new TextBox();
             txt_amount = new Label();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            type_txt = new TextBox();
+            publishhouse_txt = new TextBox();
+            txt_author = new TextBox();
             txt_bookname = new TextBox();
             txt_bookid = new TextBox();
             txt_type = new Label();
@@ -142,6 +144,9 @@
             clear_btn.Cursor = Cursors.Hand;
             clear_btn.Font = new Font("Arial Rounded MT Bold", 11.8956518F, FontStyle.Regular, GraphicsUnit.Point, 0);
             clear_btn.ForeColor = SystemColors.ButtonHighlight;
+            clear_btn.ImageAlign = ContentAlignment.MiddleLeft;
+            clear_btn.ImageKey = "broom.png";
+            clear_btn.ImageList = ımageList1;
             clear_btn.Location = new Point(388, 276);
             clear_btn.Name = "clear_btn";
             clear_btn.Size = new Size(174, 49);
@@ -150,12 +155,25 @@
             clear_btn.UseVisualStyleBackColor = false;
             clear_btn.Click += clear_btn_Click;
             // 
+            // ımageList1
+            // 
+            ımageList1.ColorDepth = ColorDepth.Depth32Bit;
+            ımageList1.ImageStream = (ImageListStreamer)resources.GetObject("ımageList1.ImageStream");
+            ımageList1.TransparentColor = Color.Transparent;
+            ımageList1.Images.SetKeyName(0, "add-button.png");
+            ımageList1.Images.SetKeyName(1, "broom.png");
+            ımageList1.Images.SetKeyName(2, "clear.png");
+            ımageList1.Images.SetKeyName(3, "refresh.png");
+            // 
             // update_btn
             // 
             update_btn.BackColor = Color.MediumTurquoise;
             update_btn.Cursor = Cursors.Hand;
             update_btn.Font = new Font("Arial Rounded MT Bold", 11.8956518F, FontStyle.Regular, GraphicsUnit.Point, 0);
             update_btn.ForeColor = SystemColors.ButtonHighlight;
+            update_btn.ImageAlign = ContentAlignment.MiddleLeft;
+            update_btn.ImageIndex = 3;
+            update_btn.ImageList = ımageList1;
             update_btn.Location = new Point(388, 221);
             update_btn.Name = "update_btn";
             update_btn.Size = new Size(174, 49);
@@ -170,6 +188,9 @@
             delete_btn.Cursor = Cursors.Hand;
             delete_btn.Font = new Font("Arial Rounded MT Bold", 11.8956518F, FontStyle.Regular, GraphicsUnit.Point, 0);
             delete_btn.ForeColor = SystemColors.ButtonHighlight;
+            delete_btn.ImageAlign = ContentAlignment.MiddleLeft;
+            delete_btn.ImageIndex = 2;
+            delete_btn.ImageList = ımageList1;
             delete_btn.Location = new Point(388, 166);
             delete_btn.Name = "delete_btn";
             delete_btn.Size = new Size(174, 49);
@@ -184,6 +205,9 @@
             create_btn.Cursor = Cursors.Hand;
             create_btn.Font = new Font("Arial Rounded MT Bold", 11.8956518F, FontStyle.Regular, GraphicsUnit.Point, 0);
             create_btn.ForeColor = SystemColors.ButtonHighlight;
+            create_btn.ImageAlign = ContentAlignment.MiddleLeft;
+            create_btn.ImageIndex = 0;
+            create_btn.ImageList = ımageList1;
             create_btn.Location = new Point(388, 111);
             create_btn.Name = "create_btn";
             create_btn.Size = new Size(174, 49);
@@ -426,6 +450,7 @@
             dataGridView2.RowHeadersWidth = 49;
             dataGridView2.Size = new Size(677, 317);
             dataGridView2.TabIndex = 24;
+            dataGridView2.CellContentClick += dataGridView2_CellContentClick;
             // 
             // bookid
             // 
@@ -513,7 +538,7 @@
             label9.AutoSize = true;
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Arial Rounded MT Bold", 18.1565228F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.Location = new Point(878, 12);
+            label9.Location = new Point(931, 12);
             label9.Name = "label9";
             label9.Size = new Size(105, 33);
             label9.TabIndex = 25;
@@ -521,20 +546,20 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(textBox9);
-            groupBox2.Controls.Add(textBox8);
+            groupBox2.Controls.Add(yearofissue_txt);
+            groupBox2.Controls.Add(numberofpages_txt);
             groupBox2.Controls.Add(txt_yearofissue);
             groupBox2.Controls.Add(txt_numberofpages);
-            groupBox2.Controls.Add(textBox7);
+            groupBox2.Controls.Add(lang_txt);
             groupBox2.Controls.Add(btn_bookclear);
             groupBox2.Controls.Add(btn_bookupdate);
             groupBox2.Controls.Add(btn_bookdelete);
             groupBox2.Controls.Add(btn_bookadd);
-            groupBox2.Controls.Add(textBox1);
+            groupBox2.Controls.Add(amount_txt);
             groupBox2.Controls.Add(txt_amount);
-            groupBox2.Controls.Add(textBox2);
-            groupBox2.Controls.Add(textBox3);
-            groupBox2.Controls.Add(textBox4);
+            groupBox2.Controls.Add(type_txt);
+            groupBox2.Controls.Add(publishhouse_txt);
+            groupBox2.Controls.Add(txt_author);
             groupBox2.Controls.Add(txt_bookname);
             groupBox2.Controls.Add(txt_bookid);
             groupBox2.Controls.Add(txt_type);
@@ -550,21 +575,21 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "book transactions";
             // 
-            // textBox9
+            // yearofissue_txt
             // 
-            textBox9.Cursor = Cursors.IBeam;
-            textBox9.Location = new Point(510, 72);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(148, 26);
-            textBox9.TabIndex = 26;
+            yearofissue_txt.Cursor = Cursors.IBeam;
+            yearofissue_txt.Location = new Point(510, 66);
+            yearofissue_txt.Name = "yearofissue_txt";
+            yearofissue_txt.Size = new Size(148, 26);
+            yearofissue_txt.TabIndex = 26;
             // 
-            // textBox8
+            // numberofpages_txt
             // 
-            textBox8.Cursor = Cursors.IBeam;
-            textBox8.Location = new Point(510, 26);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(148, 26);
-            textBox8.TabIndex = 25;
+            numberofpages_txt.Cursor = Cursors.IBeam;
+            numberofpages_txt.Location = new Point(510, 26);
+            numberofpages_txt.Name = "numberofpages_txt";
+            numberofpages_txt.Size = new Size(148, 26);
+            numberofpages_txt.TabIndex = 25;
             // 
             // txt_yearofissue
             // 
@@ -588,13 +613,13 @@
             txt_numberofpages.TabIndex = 23;
             txt_numberofpages.Text = "Number Of Pages:";
             // 
-            // textBox7
+            // lang_txt
             // 
-            textBox7.Cursor = Cursors.IBeam;
-            textBox7.Location = new Point(149, 159);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(148, 26);
-            textBox7.TabIndex = 22;
+            lang_txt.Cursor = Cursors.IBeam;
+            lang_txt.Location = new Point(149, 159);
+            lang_txt.Name = "lang_txt";
+            lang_txt.Size = new Size(148, 26);
+            lang_txt.TabIndex = 22;
             // 
             // btn_bookclear
             // 
@@ -602,12 +627,16 @@
             btn_bookclear.Cursor = Cursors.Hand;
             btn_bookclear.Font = new Font("Arial Rounded MT Bold", 11.8956518F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_bookclear.ForeColor = SystemColors.ButtonHighlight;
+            btn_bookclear.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_bookclear.ImageKey = "broom.png";
+            btn_bookclear.ImageList = ımageList1;
             btn_bookclear.Location = new Point(403, 276);
             btn_bookclear.Name = "btn_bookclear";
             btn_bookclear.Size = new Size(174, 49);
             btn_bookclear.TabIndex = 21;
             btn_bookclear.Text = "Clear";
             btn_bookclear.UseVisualStyleBackColor = false;
+            btn_bookclear.Click += btn_bookclear_Click;
             // 
             // btn_bookupdate
             // 
@@ -615,12 +644,16 @@
             btn_bookupdate.Cursor = Cursors.Hand;
             btn_bookupdate.Font = new Font("Arial Rounded MT Bold", 11.8956518F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_bookupdate.ForeColor = SystemColors.ButtonHighlight;
+            btn_bookupdate.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_bookupdate.ImageKey = "refresh.png";
+            btn_bookupdate.ImageList = ımageList1;
             btn_bookupdate.Location = new Point(403, 221);
             btn_bookupdate.Name = "btn_bookupdate";
             btn_bookupdate.Size = new Size(174, 49);
             btn_bookupdate.TabIndex = 20;
             btn_bookupdate.Text = "Update";
             btn_bookupdate.UseVisualStyleBackColor = false;
+            btn_bookupdate.Click += btn_bookupdate_Click;
             // 
             // btn_bookdelete
             // 
@@ -628,12 +661,16 @@
             btn_bookdelete.Cursor = Cursors.Hand;
             btn_bookdelete.Font = new Font("Arial Rounded MT Bold", 11.8956518F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_bookdelete.ForeColor = SystemColors.ButtonHighlight;
+            btn_bookdelete.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_bookdelete.ImageKey = "clear.png";
+            btn_bookdelete.ImageList = ımageList1;
             btn_bookdelete.Location = new Point(403, 166);
             btn_bookdelete.Name = "btn_bookdelete";
             btn_bookdelete.Size = new Size(174, 49);
             btn_bookdelete.TabIndex = 19;
             btn_bookdelete.Text = "Delete";
             btn_bookdelete.UseVisualStyleBackColor = false;
+            btn_bookdelete.Click += btn_bookdelete_Click;
             // 
             // btn_bookadd
             // 
@@ -641,20 +678,24 @@
             btn_bookadd.Cursor = Cursors.Hand;
             btn_bookadd.Font = new Font("Arial Rounded MT Bold", 11.8956518F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_bookadd.ForeColor = SystemColors.ButtonHighlight;
+            btn_bookadd.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_bookadd.ImageKey = "add-button.png";
+            btn_bookadd.ImageList = ımageList1;
             btn_bookadd.Location = new Point(403, 111);
             btn_bookadd.Name = "btn_bookadd";
             btn_bookadd.Size = new Size(174, 49);
             btn_bookadd.TabIndex = 18;
             btn_bookadd.Text = "Create";
             btn_bookadd.UseVisualStyleBackColor = false;
+            btn_bookadd.Click += btn_bookadd_Click;
             // 
-            // textBox1
+            // amount_txt
             // 
-            textBox1.Cursor = Cursors.IBeam;
-            textBox1.Location = new Point(149, 299);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(148, 26);
-            textBox1.TabIndex = 15;
+            amount_txt.Cursor = Cursors.IBeam;
+            amount_txt.Location = new Point(149, 299);
+            amount_txt.Name = "amount_txt";
+            amount_txt.Size = new Size(148, 26);
+            amount_txt.TabIndex = 15;
             // 
             // txt_amount
             // 
@@ -667,29 +708,29 @@
             txt_amount.TabIndex = 14;
             txt_amount.Text = "Amount:";
             // 
-            // textBox2
+            // type_txt
             // 
-            textBox2.Cursor = Cursors.IBeam;
-            textBox2.Location = new Point(149, 253);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(148, 26);
-            textBox2.TabIndex = 13;
+            type_txt.Cursor = Cursors.IBeam;
+            type_txt.Location = new Point(149, 253);
+            type_txt.Name = "type_txt";
+            type_txt.Size = new Size(148, 26);
+            type_txt.TabIndex = 13;
             // 
-            // textBox3
+            // publishhouse_txt
             // 
-            textBox3.Cursor = Cursors.IBeam;
-            textBox3.Location = new Point(149, 208);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(148, 26);
-            textBox3.TabIndex = 12;
+            publishhouse_txt.Cursor = Cursors.IBeam;
+            publishhouse_txt.Location = new Point(149, 208);
+            publishhouse_txt.Name = "publishhouse_txt";
+            publishhouse_txt.Size = new Size(148, 26);
+            publishhouse_txt.TabIndex = 12;
             // 
-            // textBox4
+            // txt_author
             // 
-            textBox4.Cursor = Cursors.IBeam;
-            textBox4.Location = new Point(149, 111);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(148, 26);
-            textBox4.TabIndex = 10;
+            txt_author.Cursor = Cursors.IBeam;
+            txt_author.Location = new Point(149, 111);
+            txt_author.Name = "txt_author";
+            txt_author.Size = new Size(148, 26);
+            txt_author.TabIndex = 10;
             // 
             // txt_bookname
             // 
@@ -852,11 +893,11 @@
         private Button btn_bookupdate;
         private Button btn_bookdelete;
         private Button btn_bookadd;
-        private TextBox textBox1;
+        private TextBox amount_txt;
         private Label txt_amount;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox type_txt;
+        private TextBox publishhouse_txt;
+        private TextBox txt_author;
         private TextBox txt_bookname;
         private TextBox txt_bookid;
         private Label txt_type;
@@ -865,10 +906,11 @@
         private Label txt_bookauthor;
         private Label label15;
         private Label label16;
-        private TextBox textBox9;
-        private TextBox textBox8;
+        private TextBox yearofissue_txt;
+        private TextBox numberofpages_txt;
         private Label txt_yearofissue;
         private Label txt_numberofpages;
-        private TextBox textBox7;
+        private TextBox lang_txt;
+        private ImageList ımageList1;
     }
 }

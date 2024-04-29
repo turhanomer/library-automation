@@ -33,6 +33,10 @@ namespace library_automation
             {
                 dataGridView1.Rows.Add(person.getId(), person.getName(), person.getSurname(), person.getTime(), person.getUsername(), person.getPassword(), person.getAuthorization());
             }
+            foreach (var book in mybooks)
+            {
+                dataGridView2.Rows.Add(book.getBookId(), book.getBookName(), book.getAuthor(), book.getBookLang(), book.getPublishHouse, book.getType(), book.getAmount(), book.getNumberOfPages(), book.getYearOfIssue());
+            }
         }
 
         private void delete_btn_Click(object sender, EventArgs e)
@@ -85,5 +89,54 @@ namespace library_automation
             this.Hide();
         }
 
+        private void btn_bookadd_Click(object sender, EventArgs e)
+        {
+            dataGridView2.Rows.Add(txt_bookid.Text, txt_bookname.Text, txt_author.Text, lang_txt.Text, publishhouse_txt.Text, amount_txt.Text, type_txt.Text, numberofpages_txt.Text, yearofissue_txt.Text);
+        }
+
+        private void btn_bookdelete_Click(object sender, EventArgs e)
+        {
+            dataGridView2.Rows.Remove(dataGridView2.CurrentRow);
+        }
+
+        private void btn_bookupdate_Click(object sender, EventArgs e)
+        {
+            string bookid  = txt_bookid.Text;
+            string bookname = txt_bookname.Text;
+            string bookauthor = txt_author.Text;
+            string booklang = lang_txt.Text;
+            string publishhouse = publishhouse_txt.Text;
+            string type = type_txt.Text;
+            string amount = amount_txt.Text;
+            string numberofpages = numberofpages_txt.Text;
+            string yearofissue = yearofissue_txt.Text;
+
+            dataGridView2.Rows.Remove(dataGridView2.CurrentRow);
+            dataGridView2.Rows.Add(bookid, bookname, bookauthor, booklang, publishhouse, type, amount, numberofpages, yearofissue);
+        }
+
+        private void btn_bookclear_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < groupBox2.Controls.Count; i++)
+            {
+                if (groupBox2.Controls[i] is TextBox)
+                {
+                    groupBox2.Controls[i].Text = string.Empty;
+                }
+            }
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txt_bookid.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
+            txt_bookname.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
+            txt_author.Text = dataGridView2.CurrentRow.Cells[2].Value.ToString();
+            lang_txt.Text = dataGridView2.CurrentRow.Cells[3].Value.ToString();
+            publishhouse_txt.Text = dataGridView2.CurrentRow.Cells[4].Value.ToString();
+            type_txt.Text = dataGridView2.CurrentRow.Cells[5].Value.ToString();
+            amount_txt.Text = dataGridView2.CurrentRow.Cells[6].Value.ToString();
+            numberofpages_txt.Text = dataGridView2.CurrentRow.Cells[7].Value.ToString();
+            yearofissue_txt.Text = dataGridView2.CurrentRow.Cells[8].Value.ToString();
+        }
     }
 }
