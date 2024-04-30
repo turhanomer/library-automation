@@ -94,6 +94,12 @@
             txt_bookauthor = new Label();
             label15 = new Label();
             label16 = new Label();
+            textBox1 = new TextBox();
+            btn_searchMember = new Button();
+            btn_refreshMember = new Button();
+            btn_refreshBook = new Button();
+            btn_searchBook = new Button();
+            textBox2 = new TextBox();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -121,7 +127,7 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(label2);
-            groupBox1.Location = new Point(12, 371);
+            groupBox1.Location = new Point(12, 414);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(599, 331);
             groupBox1.TabIndex = 1;
@@ -345,7 +351,7 @@
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID, NAME, SURNAME, Column1, Column2, Column3, Column4 });
-            dataGridView1.Location = new Point(12, 48);
+            dataGridView1.Location = new Point(12, 91);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 49;
             dataGridView1.Size = new Size(599, 317);
@@ -420,7 +426,7 @@
             label8.AutoSize = true;
             label8.BackColor = Color.Transparent;
             label8.Font = new Font("Arial Rounded MT Bold", 18.1565228F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(230, 12);
+            label8.Location = new Point(245, 12);
             label8.Name = "label8";
             label8.Size = new Size(146, 33);
             label8.TabIndex = 22;
@@ -433,7 +439,7 @@
             pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             pictureBox1.Cursor = Cursors.Hand;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1226, 0);
+            pictureBox1.Location = new Point(1228, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(81, 45);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -445,7 +451,7 @@
             // 
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.Columns.AddRange(new DataGridViewColumn[] { bookid, bookname, author, lang, publishhouse, type, amount, numberofpages, yearofissue });
-            dataGridView2.Location = new Point(617, 48);
+            dataGridView2.Location = new Point(617, 91);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 49;
             dataGridView2.Size = new Size(677, 317);
@@ -538,7 +544,7 @@
             label9.AutoSize = true;
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Arial Rounded MT Bold", 18.1565228F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.Location = new Point(931, 12);
+            label9.Location = new Point(922, 12);
             label9.Name = "label9";
             label9.Size = new Size(105, 33);
             label9.TabIndex = 25;
@@ -568,7 +574,7 @@
             groupBox2.Controls.Add(txt_bookauthor);
             groupBox2.Controls.Add(label15);
             groupBox2.Controls.Add(label16);
-            groupBox2.Location = new Point(617, 371);
+            groupBox2.Location = new Point(617, 414);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(677, 331);
             groupBox2.TabIndex = 26;
@@ -814,6 +820,64 @@
             label16.TabIndex = 2;
             label16.Text = "Id:";
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(255, 57);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(120, 26);
+            textBox1.TabIndex = 27;
+            // 
+            // btn_searchMember
+            // 
+            btn_searchMember.BackColor = SystemColors.ButtonFace;
+            btn_searchMember.Location = new Point(159, 57);
+            btn_searchMember.Name = "btn_searchMember";
+            btn_searchMember.Size = new Size(90, 28);
+            btn_searchMember.TabIndex = 28;
+            btn_searchMember.Text = "Search";
+            btn_searchMember.UseVisualStyleBackColor = false;
+            btn_searchMember.Click += btn_searchMember_Click;
+            // 
+            // btn_refreshMember
+            // 
+            btn_refreshMember.BackColor = SystemColors.ButtonFace;
+            btn_refreshMember.Location = new Point(381, 55);
+            btn_refreshMember.Name = "btn_refreshMember";
+            btn_refreshMember.Size = new Size(90, 30);
+            btn_refreshMember.TabIndex = 29;
+            btn_refreshMember.Text = "Refresh";
+            btn_refreshMember.UseVisualStyleBackColor = false;
+            btn_refreshMember.Click += btn_refreshMember_Click;
+            // 
+            // btn_refreshBook
+            // 
+            btn_refreshBook.BackColor = SystemColors.ButtonFace;
+            btn_refreshBook.Location = new Point(1039, 57);
+            btn_refreshBook.Name = "btn_refreshBook";
+            btn_refreshBook.Size = new Size(90, 28);
+            btn_refreshBook.TabIndex = 32;
+            btn_refreshBook.Text = "Refresh";
+            btn_refreshBook.UseVisualStyleBackColor = false;
+            btn_refreshBook.Click += btn_refreshBook_Click;
+            // 
+            // btn_searchBook
+            // 
+            btn_searchBook.BackColor = SystemColors.ButtonFace;
+            btn_searchBook.Location = new Point(817, 59);
+            btn_searchBook.Name = "btn_searchBook";
+            btn_searchBook.Size = new Size(90, 28);
+            btn_searchBook.TabIndex = 31;
+            btn_searchBook.Text = "Search";
+            btn_searchBook.UseVisualStyleBackColor = false;
+            btn_searchBook.Click += btn_searchBook_Click;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(913, 59);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(120, 26);
+            textBox2.TabIndex = 30;
+            // 
             // AdminPage
             // 
             AutoScaleDimensions = new SizeF(8F, 19F);
@@ -821,7 +885,13 @@
             AutoValidate = AutoValidate.EnablePreventFocusChange;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1306, 714);
+            ClientSize = new Size(1308, 757);
+            Controls.Add(btn_refreshBook);
+            Controls.Add(btn_searchBook);
+            Controls.Add(textBox2);
+            Controls.Add(btn_refreshMember);
+            Controls.Add(btn_searchMember);
+            Controls.Add(textBox1);
             Controls.Add(groupBox2);
             Controls.Add(label9);
             Controls.Add(dataGridView2);
@@ -912,5 +982,11 @@
         private Label txt_numberofpages;
         private TextBox lang_txt;
         private ImageList ımageList1;
+        private TextBox textBox1;
+        private Button btn_searchMember;
+        private Button btn_refreshMember;
+        private Button btn_refreshBook;
+        private Button btn_searchBook;
+        private TextBox textBox2;
     }
 }

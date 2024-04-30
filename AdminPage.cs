@@ -101,7 +101,7 @@ namespace library_automation
 
         private void btn_bookupdate_Click(object sender, EventArgs e)
         {
-            string bookid  = txt_bookid.Text;
+            string bookid = txt_bookid.Text;
             string bookname = txt_bookname.Text;
             string bookauthor = txt_author.Text;
             string booklang = lang_txt.Text;
@@ -137,6 +137,57 @@ namespace library_automation
             amount_txt.Text = dataGridView2.CurrentRow.Cells[6].Value.ToString();
             numberofpages_txt.Text = dataGridView2.CurrentRow.Cells[7].Value.ToString();
             yearofissue_txt.Text = dataGridView2.CurrentRow.Cells[8].Value.ToString();
+        }
+
+        private void btn_searchMember_Click(object sender, EventArgs e)
+        {
+            Person targetPerson = null;
+            int selectedPerson = Convert.ToInt32(textBox1.Text);
+
+            foreach (Person person in mypersons)
+            {
+                if (person.getId() == selectedPerson)
+                {
+                    targetPerson = person;
+                    break;
+                }
+            }
+            dataGridView1.Rows.Clear();
+            dataGridView1.Rows.Add(targetPerson.getId(), targetPerson.getName(), targetPerson.getSurname(), targetPerson.getTime(), targetPerson.getUsername(), targetPerson.getPassword(), targetPerson.getAuthorization());
+        }
+
+        private void btn_refreshMember_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Remove(dataGridView1.CurrentRow);
+            foreach (var person in mypersons)
+            {
+                dataGridView1.Rows.Add(person.getId(), person.getName(), person.getSurname(), person.getTime(), person.getUsername(), person.getPassword(), person.getAuthorization());
+            }
+        }
+
+        private void btn_searchBook_Click(object sender, EventArgs e)
+        {
+            Book targetBook = null;
+            int selectedBook = Convert.ToInt32(textBox2.Text);
+
+            foreach (Book book in mybooks)
+            {
+                if (book.getBookId() == selectedBook)
+                {
+                    targetBook = book;
+                }
+            }
+            dataGridView2.Rows.Clear();
+            dataGridView2.Rows.Add(targetBook.getBookId(), targetBook.getBookName(), targetBook.getAuthor(), targetBook.getBookLang(), targetBook.getPublishHouse, targetBook.getType(), targetBook.getAmount(), targetBook.getNumberOfPages(), targetBook.getYearOfIssue());
+        }
+
+        private void btn_refreshBook_Click(object sender, EventArgs e)
+        {
+            dataGridView2.Rows.Remove(dataGridView2.CurrentRow);
+            foreach (var book in mybooks)
+            {
+                dataGridView2.Rows.Add(book.getBookId(), book.getBookName(), book.getAuthor(), book.getBookLang(), book.getPublishHouse, book.getType(), book.getAmount(), book.getNumberOfPages(), book.getYearOfIssue());
+            }
         }
     }
 }

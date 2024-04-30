@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("library-automation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+589a634f8caec487b9dc1968dabf40717ae22cc4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ce3d0ba44c1dcd9d35e6f05247191e242ee0228")]
 [assembly: System.Reflection.AssemblyProductAttribute("library-automation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("library-automation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
