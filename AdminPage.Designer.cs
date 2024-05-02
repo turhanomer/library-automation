@@ -544,7 +544,7 @@
             label9.AutoSize = true;
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Arial Rounded MT Bold", 18.1565228F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.Location = new Point(922, 12);
+            label9.Location = new Point(928, 12);
             label9.Name = "label9";
             label9.Size = new Size(105, 33);
             label9.TabIndex = 25;
@@ -822,17 +822,18 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(255, 57);
+            textBox1.Location = new Point(255, 50);
+            textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(120, 26);
+            textBox1.Size = new Size(120, 35);
             textBox1.TabIndex = 27;
             // 
             // btn_searchMember
             // 
             btn_searchMember.BackColor = SystemColors.ButtonFace;
-            btn_searchMember.Location = new Point(159, 57);
+            btn_searchMember.Location = new Point(159, 50);
             btn_searchMember.Name = "btn_searchMember";
-            btn_searchMember.Size = new Size(90, 28);
+            btn_searchMember.Size = new Size(90, 37);
             btn_searchMember.TabIndex = 28;
             btn_searchMember.Text = "Search";
             btn_searchMember.UseVisualStyleBackColor = false;
@@ -841,9 +842,9 @@
             // btn_refreshMember
             // 
             btn_refreshMember.BackColor = SystemColors.ButtonFace;
-            btn_refreshMember.Location = new Point(381, 55);
+            btn_refreshMember.Location = new Point(381, 48);
             btn_refreshMember.Name = "btn_refreshMember";
-            btn_refreshMember.Size = new Size(90, 30);
+            btn_refreshMember.Size = new Size(90, 37);
             btn_refreshMember.TabIndex = 29;
             btn_refreshMember.Text = "Refresh";
             btn_refreshMember.UseVisualStyleBackColor = false;
@@ -852,9 +853,9 @@
             // btn_refreshBook
             // 
             btn_refreshBook.BackColor = SystemColors.ButtonFace;
-            btn_refreshBook.Location = new Point(1039, 57);
+            btn_refreshBook.Location = new Point(1039, 48);
             btn_refreshBook.Name = "btn_refreshBook";
-            btn_refreshBook.Size = new Size(90, 28);
+            btn_refreshBook.Size = new Size(90, 39);
             btn_refreshBook.TabIndex = 32;
             btn_refreshBook.Text = "Refresh";
             btn_refreshBook.UseVisualStyleBackColor = false;
@@ -863,9 +864,9 @@
             // btn_searchBook
             // 
             btn_searchBook.BackColor = SystemColors.ButtonFace;
-            btn_searchBook.Location = new Point(817, 59);
+            btn_searchBook.Location = new Point(817, 48);
             btn_searchBook.Name = "btn_searchBook";
-            btn_searchBook.Size = new Size(90, 28);
+            btn_searchBook.Size = new Size(90, 39);
             btn_searchBook.TabIndex = 31;
             btn_searchBook.Text = "Search";
             btn_searchBook.UseVisualStyleBackColor = false;
@@ -873,9 +874,10 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(913, 59);
+            textBox2.Location = new Point(913, 48);
+            textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(120, 26);
+            textBox2.Size = new Size(120, 37);
             textBox2.TabIndex = 30;
             // 
             // AdminPage

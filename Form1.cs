@@ -19,7 +19,6 @@ namespace library_automation
 
         private void login_btn_Click(object sender, EventArgs e)
         {
-            
             string username, password = "";
             username = txt_username.Text;
             password = txt_password.Text;
@@ -37,7 +36,7 @@ namespace library_automation
                 }
                 else if (username.ToLower() == person.getUsername() && password.ToLower() == person.getPassword() && person.getAuthorization() == "member")
                 {
-                    MemberPage memberPage = new MemberPage();
+                    MemberPage memberPage = new MemberPage(myBooks,myPersons);
                     memberPage.Show();
                     this.Hide();
                     control = true;
@@ -58,12 +57,17 @@ namespace library_automation
             myPersons.Add(new Person(2, "Samet", "Çevik", DateTime.Now, "sametcevik", "sc2004", "member"));
             myPersons.Add(new Person(3, "Mehmet Sahaf", "Bayrakçý", DateTime.Now, "msbayrakci", "msb", "member"));
 
-            myBooks.Add(new Book(1, "The Devil In Us", "Sebahattin Ali", "Turkish", "Yapý Kredi Publications", "Novel", 100, 250, 2016));
+            myBooks.Add(new Book(1, "Ýçimizdeki Þeytan", "Sebahattin Ali", "Turkish", "Yapý Kredi Publications", "Novel", 100, 250, 2016));
             myBooks.Add(new Book(2, "Game Of Thrones", "George R. R. Martin", "English", "Epilson Publications", "Novel", 910, 850, 2011));
             myBooks.Add(new Book(3, "The Lord Of The Rings", "J. R. R. Tolkien", "English", "Epilson Publications", "Novel", 800, 1026, 2001));
             myBooks.Add(new Book(4, "Crime and Punishment", "Dostoyevski", "Russian", "Ýþ Bankasý Kültür Publications", "Novel", 530, 856, 2006));
             myBooks.Add(new Book(5, "Transformation", "Franz Kafka", "German", "Can Publications", "Story", 260, 102, 2024));
             myBooks.Add(new Book(6, "Monte Cristo Kontu", "Alexandre Dumas", "French", "Ýþ Bankasý Kültür Publications", "Novel", 770, 592, 2018));
+            myBooks.Add(new Book(6, "Anna Karenina", "Lev Nikolayeviç Tolstoy", "English", "Dorlion Publications", "Novel", 590, 767, 2018));
+            myBooks.Add(new Book(6, "Oliver Twist", "Charles Dickens", "English", "Ýþ Bankasý Kültür Publications", "Novel", 330, 80, 2024));
+            myBooks.Add(new Book(6, "Bir Ömür Nasýl Yaþanýr?", "Ýlber Ortaylý", "Turkish", "Kronik Publications", "Interview", 810, 288, 2019));
+            myBooks.Add(new Book(6, "Nutuk", "Mustafa Kemal Atatürk", "Turkish", "Yapý Kredi Publications", "Discourse", 820, 627, 2011));
+
         }
     }
 }

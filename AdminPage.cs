@@ -184,7 +184,7 @@ namespace library_automation
         private void btn_refreshBook_Click(object sender, EventArgs e)
         {
             dataGridView2.Rows.Remove(dataGridView2.CurrentRow);
-            foreach (var book in mybooks)
+            foreach (Book book in mybooks)
             {
                 dataGridView2.Rows.Add(book.getBookId(), book.getBookName(), book.getAuthor(), book.getBookLang(), book.getPublishHouse, book.getType(), book.getAmount(), book.getNumberOfPages(), book.getYearOfIssue());
             }
